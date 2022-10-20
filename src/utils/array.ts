@@ -7,7 +7,7 @@ class ArrayUtils {
    */
   public findByProp(array: Array<any>, propName: any, value: any): any {
     for (let i = 0; i < array.length; i++) {
-      let item = array[i];
+      const item = array[i];
       if (item[propName] == value) {
         return item;
       }
@@ -27,7 +27,7 @@ class ArrayUtils {
     for (let i = 0; i < array.length; i++) {
       for (let j = 0; j < array.length - 1 - i; j++) {
         if (compare(array[j], array[j + 1]) > 0) {
-          let t = array[j + 1];
+          const t = array[j + 1];
           array[j + 1] = array[j];
           array[j] = t;
         }

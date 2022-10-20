@@ -1,0 +1,33 @@
+/* stylelint-disable CssSyntaxError */
+html[data-theme="dark"] {
+    --primary-color: #ffffff; // 主要的字体颜色
+    --primary-background-color: rgba(14, 14, 14, 1); // 主要的背景色
+    --footer-background-color: rgba(36, 36, 36, 1); // footer组件的背景色
+    --navbar-background-color: rgba(0, 0, 0, 0.5); // navbar组件的背景色
+    --secondary-color: rgba(255, 255, 255, 0.5); // 次一级，色值没那么显眼的字体颜色
+    --link-color: #34a8eb; // 链接 hover 上去的颜色
+}
+
+html[data-theme="light"] {
+    --primary-color: #333333;
+    --primary-background-color: rgba(255, 255, 255, 1);
+    --footer-background-color: #f4f5f5;
+    --navbar-background-color: rgba(255, 255, 255, 0.5);
+    --secondary-color: #666666;
+    --link-color: #0070f3;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 200px;
+    background: #999;
+    border-radius: 3px;
+    opacity: 0.5;
+}
